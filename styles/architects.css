@@ -18,7 +18,8 @@
      color: #727272;
 }
 .bg-light{
-    background-color: rgba(255, 144, 14, 0.1);
+    background-color: rgba(238, 131, 8, 0.1)
+
 }
 .btn-primary{
     background-color: #FF900E;
@@ -137,7 +138,21 @@ main > section {
     max-width: 542px;
     margin-bottom:90px;
 }
+/* sponsor related styles */
 
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sopnsor-company{
+   display:grid;
+   grid-template-columns:repeat(5,1fr) ;
+}
+.sopnsor-company img{
+    filter: grayscale(100%);
+}
 
 /* reaponsive media qurey */
 @media screen and (max-width:576px){
@@ -146,13 +161,25 @@ main > section {
      .teams{
             flex-direction: column;
     }
-    .team-img{
+    .team-img, .facts-container{
         grid-template-columns: repeat(1,1fr);
     }
-
+    .facts-container{
+        justify-items: center;
+    }
+      .some-facts{
+        justify-items: center;
+        text-align: center;
+    }
    .our-features{
     margin-left: 20px;
    }
+   .sopnsor-company{
+       grid-template-columns: 1fr;
+       justify-items: center;
+       gap: 40px;
+   }
+
 
 }
 
@@ -163,5 +190,20 @@ main > section {
     }
     .our-features{
         margin-left: 50px auto;
+        max-width:590px;
     }
-}
+    .facts-container{
+              grid-template-columns: repeat(2,1fr);
+              justify-items: center;
+              margin: 0 auto;
+    }
+    .some-facts{
+        justify-items: center;
+        text-align: center;
+    }
+    .sopnsor-company{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+ }
