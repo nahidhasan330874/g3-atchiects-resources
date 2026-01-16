@@ -104,6 +104,33 @@ main > section {
 #quick-list{
     font-weight: 500;
 }
+/*  reatures section related styles */
+
+#feature-section-title{
+     border-left: 5px solid #FF900E;
+     padding-left: 20px;
+}
+
+
+.features{
+  gap: 140px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(8, 8, 8, 0.096);
+    margin-top: 20px;
+}
+.featuer-title{
+           font-weight: 600;
+           font-size: 1.25rem;
+           margin-top: 0;
+           margin-bottom: 0;
+}
+
+
+
 
 /* some facts */
 .facts-container{
